@@ -1,0 +1,10 @@
+@import "core/variables";
+@import "core/reset";
+@import "core/mixins";
+
+body {
+  font-family: $font-main;
+  font-size: $font-size;
+  background-color: $color-dark;
+  color: $color-light;
+}
