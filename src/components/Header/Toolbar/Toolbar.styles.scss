@@ -1,0 +1,59 @@
+@import "../../../styles/core";
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $color-dark1;
+  height: 60px;
+  &__navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 20px;
+    &__logo {
+      font-family: $font-secondary;
+
+      & a {
+        font-size: 35px;
+      }
+    }
+    &__items {
+      display: none;
+      & ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        & li {
+          padding: 0 0.5rem;
+          & a {
+            &:hover,
+            &:active {
+              color: $color-main2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .toolbar {
+    &__navigation {
+      flex-direction: row;
+      &__items {
+        display: block;
+      }
+      &__toggle-button {
+        display: none;
+      }
+      &__logo {
+        margin-left: 0;
+      }
+    }
+  }
+}

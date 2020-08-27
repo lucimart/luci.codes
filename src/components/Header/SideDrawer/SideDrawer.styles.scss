@@ -1,0 +1,42 @@
+@import "../../../styles/core";
+
+.side-drawer {
+  height: 100%;
+  background: $color-dark2;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 220px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+  &.open {
+    transform: translateX(0);
+  }
+  & ul {
+    height: 60%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    & li {
+      & a {
+        color: $color-light3;
+        font-size: 35px;
+        &:hover,
+        &:active {
+          color: $color-main2;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .side-drawer {
+    display: none;
+  }
+}
