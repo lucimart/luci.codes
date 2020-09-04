@@ -1,0 +1,10 @@
+@import './styles/core/';
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: $font-main;
+  font-size: $font-size;
+  background-color: $color-dark1;
+  color: $color-light3;
+}
