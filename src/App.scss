@@ -1,4 +1,6 @@
 @import './styles/core/';
+@import './styles/core/reset';
+@import './styles/core/classes';
 
 body {
   height: 100%;
@@ -6,5 +8,10 @@ body {
   font-family: $font-main;
   font-size: $font-size;
   background-color: $color-dark1;
+  color: $color-light3;
+}
+
+::selection {
+  background-color: $color-secondary-purple;
   color: $color-light3;
 }

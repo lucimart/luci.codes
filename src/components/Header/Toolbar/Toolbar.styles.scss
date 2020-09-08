@@ -1,4 +1,4 @@
-@import "../../../styles/core";
+@import '../../../styles/core';
 
 .toolbar {
   position: fixed;
@@ -7,6 +7,7 @@
   width: 100%;
   background: $color-dark1;
   height: 60px;
+  z-index: 200;
   &__navigation {
     display: flex;
     height: 100%;
@@ -23,17 +24,24 @@
     }
     &__items {
       display: none;
+      height: 100%;
       & ul {
         margin: 0;
         padding: 0;
         display: flex;
+        height: 100%;
         & li {
-          padding: 0 0.5rem;
-          & a {
-            &:hover,
-            &:active {
-              color: $color-main2;
-            }
+          padding: 0 calc(max(20px, 1.5vw));
+          transition: all 0.2s ease-out;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: calc(max(22px, 2vw));
+          &:hover,
+          &:active {
+            background-color: $color-dark2;
+            color: $color-main2;
           }
         }
       }

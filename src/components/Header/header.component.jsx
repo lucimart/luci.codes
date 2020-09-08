@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import Toolbar from "./Toolbar/Toolbar.component";
-import SideDrawer from "./SideDrawer/SideDrawer.component";
-import Backdrop from "./Backdrop/Backdrop.component";
+import Toolbar from './Toolbar/Toolbar.component';
+import SideDrawer from './SideDrawer/SideDrawer.component';
+import Backdrop from './Backdrop/Backdrop.component';
 
 class Header extends Component {
   constructor() {
@@ -24,12 +24,12 @@ class Header extends Component {
 
   render() {
     const links = [
-      ["projects", "/#projects"],
-      ["about me", "/#about-me"],
-      ["blog", "/blog"],
-      ["contact", "/#contact"],
-    ].map((link) => (
-      <li>
+      ['projects', '/#projects'],
+      ['about me', '/#about-me'],
+      ['blog', '/blog'],
+      ['contact', '/#contact'],
+    ].map((link, index) => (
+      <li key={index}>
         <Link to={link[1]} onClick={this.closeDrawer}>
           {link[0]}
         </Link>

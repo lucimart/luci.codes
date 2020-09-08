@@ -1,4 +1,4 @@
-@import "../../../styles/core";
+@import '../../../styles/core';
 
 .backdrop {
   position: fixed;
@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   background: rgba($color-dark3, 0.2);
-  z-index: 100;
+  z-index: 300;
   span {
     position: fixed;
     font-size: 38px;

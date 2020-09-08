@@ -1,4 +1,4 @@
-@import "../../../styles/core";
+@import '../../../styles/core';
 
 .side-drawer {
   height: 100%;
@@ -23,13 +23,18 @@
     justify-content: space-around;
     text-align: center;
     & li {
-      & a {
-        color: $color-light3;
-        font-size: 35px;
-        &:hover,
-        &:active {
-          color: $color-main2;
-        }
+      color: $color-light3;
+      font-size: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      transition: all 0.2s ease-out;
+      &:hover,
+      &:active {
+        background-color: $color-dark3;
+        color: $color-main2;
+        color: $color-main2;
       }
     }
   }

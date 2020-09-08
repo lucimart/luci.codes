@@ -1,8 +1,8 @@
-import React from "react";
-import "./blog.styles.scss";
+import React from 'react';
+import './blog.styles.scss';
 
 const Blog = () => {
-  return <div></div>;
+  return <section></section>;
 };
 
 export default Blog;
