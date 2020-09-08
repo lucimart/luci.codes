@@ -55,4 +55,9 @@
       box-shadow: 0 0 5px 0 $color-secondary-purple;
     }
   }
+  & p {
+    margin-top: 15px;
+    align-self: center;
+    color: $color-secondary-green;
+  }
 }
