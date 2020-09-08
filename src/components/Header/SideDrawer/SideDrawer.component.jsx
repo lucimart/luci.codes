@@ -11,7 +11,17 @@ const sideDrawer = ({ show, links, closeDrawer }) => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <Link smooth to='/' onClick={closeDrawer}>
+          <Link
+            to='/'
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+              });
+              closeDrawer();
+            }}
+          >
             home
           </Link>
         </li>

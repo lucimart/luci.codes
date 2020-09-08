@@ -14,7 +14,16 @@ const toolbar = ({ drawerClickHandler, isSideDrawerOpen, links }) => (
         />
       </div>
       <div className='toolbar__navigation__logo'>
-        <Link smooth to='/'>
+        <Link
+          to='/'
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: 'smooth',
+            })
+          }
+        >
           luci
         </Link>
       </div>
