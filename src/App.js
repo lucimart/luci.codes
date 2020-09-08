@@ -23,7 +23,7 @@ class App extends Component {
           {/* <!-- Open Graph / Facebook --> */}
           <meta property='og:type' content='website' />
           <meta property='og:url' content='https://luci.codes/' />
-          <meta property='og:title' content="Lucía Martínez's Portfolio" />
+          <meta property='og:title' content='Luci Codes' />
           <meta
             property='og:description'
             content="Lucía Martínez's Web Developer Portfolio."
@@ -33,7 +33,7 @@ class App extends Component {
           {/* <!-- Twitter --> */}
           <meta property='twitter:card' content='summary_large_image' />
           <meta property='twitter:url' content='https://luci.codes/' />
-          <meta property='twitter:title' content="Lucía Martínez's Portfolio" />
+          <meta property='twitter:title' content='Luci Codes' />
           <meta
             property='twitter:description'
             content="Lucía Martínez's Web Developer Portfolio."
