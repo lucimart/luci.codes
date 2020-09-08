@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import Toolbar from './Toolbar/Toolbar.component';
 import SideDrawer from './SideDrawer/SideDrawer.component';
@@ -30,7 +30,7 @@ class Header extends Component {
       ['contact', '/#contact'],
     ].map((link, index) => (
       <li key={index}>
-        <Link to={link[1]} onClick={this.closeDrawer}>
+        <Link smooth to={link[1]} onClick={this.closeDrawer}>
           {link[0]}
         </Link>
       </li>
