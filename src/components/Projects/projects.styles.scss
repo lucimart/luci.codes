@@ -8,12 +8,18 @@
   flex-direction: column;
   &__container {
     width: 100%;
-    background-color: $color-dark2;
+    background-color: rgba($color-dark2, 0.5);
     padding: calc(max(10px, 2vw)) 4%;
     border-radius: 10px;
     &__title {
       text-align: center;
       font-size: calc(max(36px, 3.6vw));
     }
+  }
+}
+
+@include desktop {
+  .projects {
+    padding: 75px 12%;
   }
 }

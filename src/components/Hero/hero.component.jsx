@@ -19,17 +19,36 @@ const Hero = () => {
         trigger: heroContainer.current,
         start: 'top 20%',
         end: 'bottom 80%',
-        scrub: 0.5,
+        scrub: 2,
         markers: false,
       },
 
       y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
     });
   }, [heroContainer]);
+  useEffect(() => {
+    ScrollTrigger.create({
+      trigger: '#id',
+      start: 'top top',
+      endTrigger: '#otherID',
+      end: 'bottom 50%+=100px',
+      onToggle: (self) => console.log('toggled, isActive:', self.isActive),
+      onUpdate: (self) => {
+        console.log(
+          'progress:',
+          self.progress.toFixed(3),
+          'direction:',
+          self.direction,
+          'velocity',
+          self.getVelocity()
+        );
+      },
+    });
+  });
 
   return (
     <section className='hero'>
-      <div className='hero__container'>
+      <div className='hero__container' id='id'>
         <small className='hero__container__title'>
           (Hi, I'm Lucía Martínez)
         </small>
@@ -42,7 +61,7 @@ const Hero = () => {
           </span>
         </p>
       </div>
-      {/* <div className='hero__circle' ref={heroContainer} data-speed={0.05}></div> */}
+      <div className='hero__circle' ref={heroContainer} data-speed={0.05}></div>
     </section>
   );
 };

@@ -1,14 +1,14 @@
 @import '../../styles/core';
 
 .hero {
-  margin: 100px 0;
+  margin: 160px 0;
   padding: 0 6%;
   width: 100%;
   display: flex;
   flex-direction: column;
   &__container {
     width: 100%;
-    background-color: $color-dark2;
+    background-color: rgba($color-dark2, 0.5);
     padding: calc(max(10px, 2vw)) 4%;
     border-radius: 10px;
     &__title {
@@ -19,7 +19,7 @@
     &__body {
       padding-top: 10px;
       text-align: right;
-      font-size: calc(max(22px, 3.4vw));
+      font-size: calc(max(22px, 3vw));
       line-height: 1.15;
     }
   }
@@ -32,5 +32,11 @@
     border-radius: 50%;
     background-color: $color-dark3;
     z-index: -1;
+  }
+}
+
+@include desktop {
+  .hero {
+    padding: 0 12%;
   }
 }

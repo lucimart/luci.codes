@@ -8,12 +8,12 @@
   flex-direction: column;
   &__container {
     width: 100%;
-    background-color: $color-dark2;
+    background-color: rgba($color-dark2, 0.5);
     padding: calc(max(10px, 2vw)) 4%;
     border-radius: 10px;
     &__title {
       text-align: center;
-      font-size: calc(max(36px, 3.6vw));
+      font-size: calc(max(36px, 3.2vw));
       margin: 0 0 15px;
     }
     &__socialContainer {
@@ -24,7 +24,7 @@
       align-items: center;
       &__title {
         text-align: center;
-        font-size: calc(max(30px, 3vw));
+        font-size: calc(max(28px, 2.4vw));
         margin: 25px 0 10px;
       }
       &__list {
@@ -45,5 +45,11 @@
         }
       }
     }
+  }
+}
+
+@include desktop {
+  .contact {
+    padding: 75px 12%;
   }
 }
