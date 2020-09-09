@@ -7,14 +7,23 @@
   left: 0;
   position: absolute;
   z-index: -1;
+  overflow-x: hidden;
   & #header-wave {
     position: absolute;
     path {
       animation: wave__header 30s ease-in-out infinite alternate;
     }
     fill: rgba($color-dark2, 1);
-    height: 200%;
-    width: 100%;
+    height: 100%;
+    width: 300%;
+  }
+}
+
+@include tablet {
+  .header__wave {
+    & #header-wave {
+      width: 100%;
+    }
   }
 }
 
