@@ -2,13 +2,19 @@
 @import './styles/core/reset';
 @import './styles/core/classes';
 
-body {
-  height: 100%;
-  width: 100%;
-  font-family: $font-main;
-  font-size: $font-size;
-  background-color: $color-dark1;
-  color: $color-light3;
+html {
+  body {
+    width: 100%;
+    font-family: $font-main;
+    font-size: $font-size;
+    background-color: $color-dark1;
+    color: $color-light3;
+    #root {
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+    }
+  }
 }
 
 ::selection {

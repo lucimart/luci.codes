@@ -7,15 +7,14 @@
   left: 0;
   position: absolute;
   z-index: -1;
-  overflow-x: hidden;
+  overflow: hidden;
   & #header-wave {
-    position: absolute;
     path {
-      animation: wave__header 30s ease-in-out infinite alternate;
+      animation: wave__header 18s ease-in-out infinite alternate;
     }
     fill: rgba($color-dark2, 1);
-    height: 100%;
-    width: 300%;
+    height: 120%;
+    width: 200%;
   }
 }
 

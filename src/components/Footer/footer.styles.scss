@@ -1,22 +1,28 @@
 @import '../../styles/core';
 
-.footer {
-  position: absolute;
-  bottom: 0;
+.footr {
   width: 100%;
-  &__wave {
-    height: 100px;
-    width: 100%;
-    z-index: -1;
+  overflow-x: hidden;
+  z-index: -1;
+  & #footer-wave {
+    position: absolute;
+    bottom: 0;
+    top: unset;
+    fill: rgba($color-dark2, 1);
+    width: 200%;
+    height: 180px;
+    display: block;
+    path {
+      width: 200%;
+      animation: wave_footer 18s ease-in-out infinite alternate;
+    }
+  }
+}
+
+@include tablet {
+  .footr {
     & #footer-wave {
-      position: absolute;
-      bottom: 0;
-      fill: rgba(blue, 1);
-      height: 200%;
       width: 100%;
-      path {
-        animation: wave_footer 30s ease-in-out infinite alternate;
-      }
     }
   }
 }
