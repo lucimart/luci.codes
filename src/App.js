@@ -4,6 +4,7 @@ import './App.scss';
 import Header from './components/Header/header.component';
 import HomePage from './components/HomePage/homepage.component';
 import Blog from './components/Blog/blog.component';
+import Footer from './components/Footer/footer.component';
 import { Helmet } from 'react-helmet';
 import luciSEO from './images/luciSEO.png';
 
@@ -45,6 +46,7 @@ class App extends Component {
           <Route exact path='/' component={HomePage} />
           <Route exact path='/blog' component={Blog} />
         </Switch>
+        <Footer />
       </React.Fragment>
     );
   }

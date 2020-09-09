@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import './header.styles.scss';
 import Toolbar from './Toolbar/Toolbar.component';
 import SideDrawer from './SideDrawer/SideDrawer.component';
 import Backdrop from './Backdrop/Backdrop.component';
@@ -43,6 +43,16 @@ class Header extends Component {
     }
     return (
       <React.Fragment>
+        <div className='header__wave'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            id='header-wave'
+            viewBox='0 0 800 338.05'
+            preserveAspectRatio='none'
+          >
+            <path> </path>
+          </svg>
+        </div>
         <Toolbar
           drawerClickHandler={this.drawerToggleClickHandler}
           isSideDrawerOpen={this.state.isSideDrawerOpen}
