@@ -21,8 +21,8 @@ const data = [
     title: 'My Portfolio',
     technologies: ['html5', 'css3', 'sass', 'js', 'bem', 'react'],
     description:
-      'The site that you are currently visiting 😌. Currently being built. React for the Front and libraries such as GSAP for hand made animations',
-    image: require('../../../images/projects/wip.png'),
+      'The site that you are currently visiting 😌. Currently being built. React for the Front and libraries such as Particle.js',
+    image: require('../../../images/projects/myPortfolio.png'),
     site: 'https://luci.codes/',
     source: 'https://github.com/lucimart/luci.codes',
   },
