@@ -17,8 +17,6 @@ const Hero = () => {
           </span>
         </p>
       </div>
-
-      <div className='hero__circle'></div>
     </section>
   );
 };
