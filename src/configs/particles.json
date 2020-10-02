@@ -19,7 +19,7 @@
 	  "enable": false
 	},
 	"detectRetina": true,
-	"fpsLimit": 24,
+	"fpsLimit": 30,
 	"infection": {
 	  "cure": false,
 	  "delay": 0,
@@ -170,11 +170,10 @@
 	  "number": {
 		"density": {
 		  "enable": true,
-		  "area": 1000,
-		  "factor": 1000
+		  "area": 60
 		},
 		"limit": 0,
-		"value": 30
+		"value": 1
 	  },
 	  "opacity": {
 		"animation": {
